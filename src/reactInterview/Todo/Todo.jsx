@@ -9,7 +9,7 @@ const Todo = () => {
   const handleAdd = () => {
     if (!item.trim()) return;
 
-    setData((prev) => [...prev, { id: Date.now().toString(), item: item }]);
+    setData((prev) => [...prev, { id: Date.now().toString(), item: item, isDone:false}]);
     setItem("");
   };
 
@@ -28,6 +28,9 @@ const Todo = () => {
   const handleDelete = (id) => {
     setData((prev) => prev.filter((i) => i.id !== id));
   };
+  const handleProgress=(id)=>{
+    setData((prev)=> prev.map((item)=> (item.id === id ? {...item, isDone: !item.isDone}: item)))
+  }
 
   return (
     <div className="  my-4">
@@ -74,7 +77,7 @@ const Todo = () => {
       <div className="mt-4 flex justify-center flex-col items-center  mx-auto">
         {data.map((item, i) => (
           <div key={item.id} className="flex justify-center w-[400px]">
-            <p className="p-3 bg-gray-400  w-full my-2 ">{item.item}</p>
+            <p className={`p-3 bg-gray-400  w-full my-2 ${item.isDone && "line-through"}`} >{item.item}</p>
             <span
               className="p-3 rounded-md bg-blue-700 text-white ml-3 my-2"
               onClick={() => {
@@ -89,6 +92,12 @@ const Todo = () => {
               onClick={() => handleDelete(item.id)}
             >
               Delete
+            </span>
+            <span
+              className="p-3 rounded-md bg-yellow-700 text-white ml-3 my-2"
+              onClick={() => handleProgress(item.id)}
+            >
+              {item.isDone ? "Undone" : "Done"}
             </span>
           </div>
         ))}
