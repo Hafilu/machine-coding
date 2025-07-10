@@ -1,0 +1,79 @@
+export const checkboxData = [
+    {
+      id: 1,
+      name: "Fruits",
+      children: [
+        {
+          id: 2,
+          name: "Citrus",
+          children: [
+            { id: 3, name: "Orange" },
+            { id: 4, name: "Lemon" },
+            { id: 5, name: "Lime" }
+          ]
+        },
+        {
+          id: 6,
+          name: "Berries",
+          children: [
+            { id: 7, name: "Strawberry" },
+            { id: 8, name: "Blueberry" },
+            { id: 9, name: "Raspberry" }
+          ]
+        },
+        {
+          id: 10,
+          name: "Tropical",
+          
+        }
+      ]
+    },
+    {
+      id: 14,
+      name: "Vegetables",
+      children: [
+        {
+          id: 15,
+          name: "Leafy Greens",
+          children: [
+            { id: 16, name: "Spinach" },
+            { id: 17, name: "Kale" },
+            { id: 18, name: "Lettuce" }
+          ]
+        },
+        {
+          id: 19,
+          name: "Root Vegetables",
+          children: [
+            { id: 20, name: "Carrot" },
+            { id: 21, name: "Beetroot" },
+            { id: 22, name: "Turnip" }
+          ]
+        },
+        {
+          id: 23,
+          name: "Cruciferous",
+          children: [
+            { id: 24, name: "Broccoli" },
+            { id: 25, name: "Cauliflower" },
+            { id: 26, name: "Cabbage" }
+          ]
+        }
+      ]
+    },
+    {
+      id: 27,
+      name: "Grains",
+      children: [
+        { id: 28, name: "Rice" },
+        { id: 29, name: "Wheat" },
+        { id: 30, name: "Quinoa" }
+      ]
+    },
+    {
+      id: 31,
+      name: "Dairy",
+     
+    }
+  ];
+  
