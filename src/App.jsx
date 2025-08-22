@@ -16,8 +16,8 @@
 // import CircleCursor from "./reactInterview/CircleCursor/CircleCursor";
 // import Counter from "./reactInterview/Counter/Counter";
 // import ImageGallery from "./reactInterview/LightBox/LightBox";
+import ExamInterface from "./reactInterview/Exam/ExamInterface";
 import NestedCheckbox from "./reactInterview/NestedCheckbox/NestedCheckbox";
-
 
 // e cart
 // import Cart from "./reactInterview/ShoppingCart/Cart";
@@ -29,8 +29,8 @@ import NestedCheckbox from "./reactInterview/NestedCheckbox/NestedCheckbox";
 function App() {
   return (
     <div>
-
-      <NestedCheckbox/>
+      <ExamInterface />
+      {/* <NestedCheckbox/> */}
       {/* <Otp/> */}
       {/* <CircleCursor/> */}
       {/* <Counter/> */}
